@@ -29,3 +29,5 @@ An unofficial one page guide of testing Django
 * Testing Template Tags
 
 * Fixtures
+
+* Mocks and Patchs
