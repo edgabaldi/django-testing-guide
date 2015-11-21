@@ -12,9 +12,11 @@ An unofficial one page guide of testing Django
 
 * Testing Models
     * Testing custom method of my model
+    * Testing a validator
 
 * Testing Forms
     * Test Validation
+    * Testing my custom field
 
 * Testing Views
     * Using Request Factory
