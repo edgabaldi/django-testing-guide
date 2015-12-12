@@ -32,9 +32,7 @@ An unofficial one page guide of testing Django
 
 * Mocks and Patchs
 
-## Models
-
-### Method Override
+#### Models
 
 ``` python
 # models.py
@@ -51,8 +49,18 @@ class Order(models.Model):
 
     def subtotal(self):
         return self.product.price * self.amount
+```
 
+##### Method Override
+
+* Test only the interface of method.
+* Generally you don't need to save instances to test overrided methods, but ...
+* ... Save the instance helps you to ensure you puting the right data in model attribute.
+* A method must have one single responsability, including tests.
+
+``` python
 # tests.py
+
 import datetime
 from decimal import Decimal
 
